@@ -1,0 +1,86 @@
+﻿<Window x:Class="Software_Engineering_Projekt_1.Ablauf"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Software_Engineering_Projekt_1"
+        mc:Ignorable="d"
+        Title="Hilfe/Help" Width="1100" Height="1200" Icon="/Bilder/Hilfe.png" Background="Bisque" FontFamily="Cambria">
+    <Grid >
+        <Border BorderBrush="Red" BorderThickness="2"/>
+        <ScrollViewer Name="ScrollbisEnde">
+            <StackPanel  Width="1100" Height="1200">
+                <Image Source="/Bilder/Hochschule.png/" Width="150" Height="117" HorizontalAlignment="Left" Margin="10"/>
+            <ToolBarTray VerticalAlignment="Center" HorizontalAlignment="Center">
+                <ToolBar VerticalAlignment="Top" HorizontalAlignment="Left" Width="550" Margin="-15,-134,0,0" Background="Beige">
+                    <Image Source="/Bilder/Registrierung.png" Width="75" Height="60" />
+                        <Button Click="OnOpenZurück" Content="Zurück" Width="100" Height="35" BorderBrush="Black" BorderThickness="2"/>
+                    <Image Source="/Bilder/index.png" Width="75" Height="60"/>
+                        <Button Click="OnOpenRegistrierung" Content="Registrierung" Width="100" Height="35" BorderBrush="Black" BorderThickness="2"/>
+                    <Image Source="/Bilder/index1.png" Width="75" Height="60"/>
+                        <Button Click="OnOpenBeende" Content="Beenden" Width="100" Height="35" BorderBrush="Black" BorderThickness="2"/>
+                </ToolBar>
+            </ToolBarTray>
+                <Button Width="200" Height="40" Content="Ablauf für Dozenten/Ausschuss" Background="Beige" BorderBrush="Red" BorderThickness="2" Cursor="Hand" Click="OnOpenDozent"/>
+                <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Width="1000" Margin="0" Height="476" >
+          <Bold FontSize="20">Ablauf für die Registrierung als Student</Bold>
+            <LineBreak/>
+            <Run FontSize="18" Text="Hier findest du eine Beschreibung zum Ablauf der Verifizierung der Kurse außerhalb der FUAS (Flensburg University of applied science)"/>
+            <LineBreak/>
+            <Bold FontSize="18">Schritt 1</Bold>
+            <LineBreak/>
+            <Run FontSize="14" Text="Klicke im Hauptmenü auf Registrierung und wähle deine Rolle als Student aus. Beantworte alle Fragen und lade alle geforderten Dokumente hoch. Bitte achte auf die Vollständigkeit, um längere Wartezeiten zu vermeiden. "/>
+            <LineBreak/>
+            <Run FontSize="14" Text="Bitte beachte: bei der Vergabe eines Benutzername, bitte benutze deinen StudIP Benutzername und deine StudIP E-Mail (falls vorhanden)"/>
+            <LineBreak/>
+            <Bold FontSize="18">Schritt 2</Bold>
+            <LineBreak/>
+            <Run FontSize="14" Text="Wenn du dich als Student angemeldet hast, kannst du nun alle ausgefüllten Daten und alle hochgeladenen Dokumente sehen."/>
+            <LineBreak/>
+            <LineBreak/>
+            <Run FontSize="14" Text="Zudem wird dir ein Bearbeitungsstatus angezeigt, so weißt du wie lange deine Bearbeitungszeit ungefähr noch dauern wird."/>
+            <LineBreak/>
+            <Image Source="/Bilder/ampel.png" Width="200" Height="150" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            <LineBreak/>
+            <Bold FontSize="14" FontWeight="Medium">Rot - </Bold>
+            <Run FontSize="14" Text="Deine Dokumente wurden hochgeladen und wurden an den jeweiligen Dozenten weitergeleitet"/>
+            <LineBreak/>
+            <Bold FontSize="14" FontWeight="Medium">Gelb- </Bold>
+            <Run FontSize="14" Text="Die zuständige Person hat die Dokumente erhalten und prüft diese nun. "/>
+            <LineBreak/>
+            <Bold FontSize="14" FontWeight="Medium">Grün - </Bold>
+            <Run FontSize="14" Text="Die Bearbeitung ist beendet und die Entscheidung mit Begründung wird in ein paar Tagen per E-Mail gesendet"/>
+            </TextBlock>
+                <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Width="1000" Margin="0" Height="450" >
+          <Bold FontSize="20">Procedure for the registration for students</Bold>
+            <LineBreak/>
+            <Run FontSize="18" Text="Here you will find a description of how to apply to the system for your credit verification."/>
+            <LineBreak/>
+            <Bold FontSize="18">Step 1</Bold>
+            <LineBreak/>
+            <Run FontSize="14" Text="Click in the mainmenu on the registration button and choose your role (student), answer all the question to your courses before and upload all the wanted documents."/>
+            <LineBreak/>
+            <Run FontSize="14" Text="Please Note:if you choose a userID-name, please use your StudIP name and your StudIP E-Mail. (if have)"/>
+            <LineBreak/>
+            <Bold FontSize="18">Step 2</Bold>
+            <LineBreak/>
+            <Run FontSize="14" Text="If you applied as a student and login, you can see all your filled data and your uploaded documents."/>
+            <LineBreak/>
+            <LineBreak/>
+            <Run FontSize="14" Text="Besides you will see a status of the edit of your documents, so you can see how long your verification might take"/>
+            <LineBreak/>
+            <Image Source="/Bilder/ampel.png" Width="200" Height="150" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <LineBreak/>
+            <Bold FontSize="14" FontWeight="Medium">Red - </Bold>
+            <Run FontSize="14" Text="Your document was succesfully uploaded and forwarded to the directed person"/>
+            <LineBreak/>
+            <Bold FontSize="14" FontWeight="Medium">Yellow - </Bold>
+            <Run FontSize="14" Text="the directed person got your files and will check it to decide your verification"/>
+            <LineBreak/>
+            <Bold FontSize="14" FontWeight="Medium">Green - </Bold>
+            <Run FontSize="14" Text="The procedure is done and the decision will be sent to you by E-Mail in a few days"/>
+                </TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

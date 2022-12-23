@@ -1,0 +1,32 @@
+﻿<Window x:Class="Software_Engineering_Projekt_1.Login1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Software_Engineering_Projekt_1"
+        mc:Ignorable="d"
+        Title="Login Student" Height="450" Width="800" Background="Bisque" FontFamily="Cambria">
+    <Grid>
+        <Border BorderBrush="Red" BorderThickness="2"/>
+        <ToolBarTray Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Right" Background="Beige" Width="100" Margin="30">
+            <ToolBar Background="Beige" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Image Source="/Bilder/Registrierung.png" Width="75" Height="60"></Image>
+                <Button Click="OnOpenRegistrierung" Content="Registrierung" Width="100" Height="35" BorderBrush="Black" BorderThickness="2"></Button>
+                <Image Source="/Bilder/index.png" Width="75" Height="60"></Image>
+                <Button Click="OnOpenHilfe" Content="Hilfe/Ablauf" Width="100" Height="35" BorderBrush="Black" BorderThickness="2" ></Button>
+                <Image Source="/Bilder/index1.png" Width="75" Height="60"></Image>
+                <Button Content="Ausloggen" Width="100" Height="35" Click="Button_Click" BorderBrush="Black" BorderThickness="2"></Button>
+            </ToolBar>
+        </ToolBarTray>
+        <StackPanel>
+            <Label Content="Status deiner Bearbeitung" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" FontWeight="Heavy"/>
+            <Label Content="Zusammenfassung deiner Daten:"/>
+            <TextBlock/>
+            <Label Content="Dokumente hochladen:"/>
+            <Button Content="Upload File" x:Name="upload" Width="100" VerticalAlignment="Center" HorizontalAlignment="Left" Click="OnOpenFile" Margin="10"/>
+            <Button Content="Speichern" x:Name="save" Width="100" VerticalAlignment="Center" HorizontalAlignment="Left" Click="OnOpenSave" Margin="10"/>
+            <TextBox x:Name="Text" Width="213" Height="89" HorizontalAlignment="Left" Margin="10,10,0,10"/>
+        </StackPanel>
+        <Image Source="/Bilder/ampel.png" Width="200" Height="150" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="327,229,0,0" />
+    </Grid>
+</Window>
